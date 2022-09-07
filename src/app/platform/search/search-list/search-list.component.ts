@@ -8,6 +8,10 @@ import { GifsService } from 'src/app/shared/services/gifs.service';
 })
 export class SearchListComponent implements OnInit {
 
+  get result() {
+    return this._gifsService.result;
+  }
+
   constructor(
     public _gifsService: GifsService,
   ) { }
